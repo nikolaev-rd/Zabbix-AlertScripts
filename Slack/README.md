@@ -67,7 +67,11 @@ Send Zabbix alerts through [Incoming Webhook](https://api.slack.com/incoming-web
    ![Zabbix - Create User Macros](img/Zabbix_Create_User_Macros.jpg)
 
 8. Create new action for Slack notifications (Configuration → Actions → Create action) or add Slack media type to existing one:
-   * **Action**: customize filter to get only events about you want to alert  
+   * **Action**:  
+     - **Name**: Alert to Slack
+     - **Conditions**: customize to get only events about you want to alert
+     - **Enabled**: ☑
+     
      ![Zabbix - Create Action - Action tab](img/Zabbix_Create_Action__Action.jpg)  
      
    * **Operations**:
