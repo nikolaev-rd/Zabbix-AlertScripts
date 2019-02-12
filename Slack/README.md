@@ -67,7 +67,9 @@ Send Zabbix alerts through [Incoming Webhook](https://api.slack.com/incoming-web
    ![Zabbix - Create User Macros](img/Zabbix_Create_User_Macros.jpg)
 
 8. Create new action for Slack notifications (Configuration → Actions → Create action) or add Slack media type to existing one:
-   * **Action**: customize filter to get only events about you want to alert
+   * **Action**: customize filter to get only events about you want to alert  
+     ![Zabbix - Create Action - Action tab](img/Zabbix_Create_Action__Action.jpg)  
+     
    * **Operations**:
      - **Operation type**: Send message
      - **Send to User groups** or **Send to Users**: choose contacts from step #6
@@ -102,7 +104,9 @@ Send Zabbix alerts through [Incoming Webhook](https://api.slack.com/incoming-web
        SLACK_SERVICE_URL: {$SLACK_SERVICE_URL}
        GRAFANA_DASHBOARD_URL: {$GRAFANA_DASHBOARD_URL}
        NETDATA_PORT: {$NETDATA_PORT}
-       ```
+       ```  
+     ![Zabbix - Create Action - Operations tab](img/Zabbix_Create_Action__Operations.jpg)  
+     
    * **Recovery operations**:
      - **Operation type**: Send message
      - **Send to User groups** or **Send to Users**: choose contacts from step #6
@@ -137,4 +141,5 @@ Send Zabbix alerts through [Incoming Webhook](https://api.slack.com/incoming-web
        SLACK_SERVICE_URL: {$SLACK_SERVICE_URL}
        GRAFANA_DASHBOARD_URL: {$GRAFANA_DASHBOARD_URL}
        NETDATA_PORT: {$NETDATA_PORT}
-       ```
+       ```  
+     ![Zabbix - Create Action - Recovery operations tab](img/Zabbix_Create_Action__Recovery_operations.jpg)  
