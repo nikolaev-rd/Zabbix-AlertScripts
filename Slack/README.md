@@ -25,11 +25,11 @@ Send Zabbix alerts through [Incoming Webhook](https://api.slack.com/incoming-web
    * **Name:** Slack
    * **Type**: Script
    * **Script name**: `send-slack-message.sh`
-   * **Script parameters**:
-     1. `https://hooks.slack.com/services/ABC123456/DEF345678/WEBHOOK-LINK-HERE` _(you webhook URL from step #1)_
-     2. `{ALERT.MESSAGE}`
-     3. `{ALERT.SENDTO}`
-     4. `{ALERT.SUBJECT}`
+   * **Script parameters**:  
+     #1. `https://hooks.slack.com/services/ABC123456/DEF345678/WEBHOOK-LINK-HERE` _(you webhook URL from step #1)_  
+     #2. `{ALERT.MESSAGE}`  
+     #3. `{ALERT.SENDTO}`  
+     #4. `{ALERT.SUBJECT}`  
    * **Enabled**: ☑
    
    ![Zabbix - Create Media Type](img/Zabbix_Create_Media_Type.jpg)
