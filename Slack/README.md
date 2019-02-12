@@ -148,3 +148,7 @@ Send Zabbix alerts through [Incoming Webhook](https://api.slack.com/incoming-web
        NETDATA_PORT: {$NETDATA_PORT}
        ```  
      ![Zabbix - Create Action - Recovery operations tab](img/Zabbix_Create_Action__Recovery_operations.jpg)  
+
+## TODO
+- [ ] Add example Slack messages screenshots
+- [ ] Instructions how to test/verify integration
