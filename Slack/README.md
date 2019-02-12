@@ -164,3 +164,4 @@ Send Zabbix alerts through [Incoming Webhook](https://api.slack.com/incoming-web
 ## TODO
 - [ ] Add example Slack messages screenshots
 - [ ] Instructions how to test/verify integration
+- [ ] Check for changes in [Zabbix 4.0: Problem name generation](https://www.zabbix.com/documentation/4.0/manual/installation/upgrade_notes_400#problem_name_generation) (`{TRIGGER.NAME}` → `{EVENT.NAME}`)
