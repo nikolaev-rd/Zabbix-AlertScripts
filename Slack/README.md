@@ -156,6 +156,7 @@ Send Zabbix alerts through [Incoming Webhook](https://api.slack.com/incoming-web
        GRAFANA_DASHBOARD_URL: {$GRAFANA_DASHBOARD_URL}
        NETDATA_PORT: {$NETDATA_PORT}
        ```
+     
      <details><summary>Show example screenshot</summary>
         <img src="img/Zabbix_Create_Action__Recovery_operations.jpg" alt="Zabbix - Create Action - Recovery operations tab">
      </details>
