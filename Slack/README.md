@@ -39,7 +39,7 @@ Send Zabbix alerts through [Incoming Webhook](https://api.slack.com/incoming-web
    * **Send to**: `@slack-username` _or_ `#channel_name`
    * **Enabled**: ☑
 
-7. It's more usefull (but not requred) to add a user macros for some fields:
+7. It's more usefull (but not requred) to add a [user macros](https://www.zabbix.com/documentation/4.0/manual/config/macros/usermacros) for some fields:
    * `{$SLACK_EMOJI_OK}` : `:sos:` or maybe `:greencheckmark:`  
      Emoji for OK message (displayed in title with trigger name).  
      _Note:_ you can add custom emoji and use it here.  
