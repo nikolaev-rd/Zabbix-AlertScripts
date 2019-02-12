@@ -1,4 +1,5 @@
-# Zabbix alert script for Slack
+# <img src="/_img/Slack_logo__300x300.png" alt="Slack logo" height="24">&nbsp;Zabbix alert script for Slack
+
 Send Zabbix alerts through [Incoming Webhook](https://api.slack.com/incoming-webhooks) to Slack, formatted with [message attachments](https://api.slack.com/docs/message-attachments).
 
 ## Installation & Configure
