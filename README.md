@@ -7,3 +7,6 @@ Scripts for sending alerts via Email.
 
 ## [SMS](SMS)
 Scripts for sending alerts via SMS.
+
+## [Slack](Slack)
+Scripts for sending alerts to [Slack](https://slack.com) (user or channel).
