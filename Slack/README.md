@@ -165,3 +165,9 @@ Send Zabbix alerts through [Incoming Webhook](https://api.slack.com/incoming-web
 - [ ] Add example Slack messages screenshots
 - [ ] Instructions how to test/verify integration
 - [ ] Check for changes in [Zabbix 4.0: Problem name generation](https://www.zabbix.com/documentation/4.0/manual/installation/upgrade_notes_400#problem_name_generation) (`{TRIGGER.NAME}` → `{EVENT.NAME}`)
+
+## Related Links
+- [Slack message builder](https://api.slack.com/docs/messages/builder)
+- [Zabbix Alert Script for Slack by @tomohiro](https://github.com/tomohiro/zabbix-alertscript-slack/)
+- [zabbix-alert-slack by @uyorum](https://github.com/uyorum/zabbix-alert-slack)
+- [Zabbix Slack AlertScript by @ericoc](https://github.com/ericoc/zabbix-slack-alertscript)
