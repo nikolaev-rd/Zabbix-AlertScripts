@@ -2,6 +2,9 @@
 
 Send Zabbix alerts through [Incoming Webhook](https://api.slack.com/incoming-webhooks) to Slack, formatted with [message attachments](https://api.slack.com/docs/message-attachments).
 
+## Requirements
+  ✔ Zabbix >= 3.0  
+
 ## Installation & Configure
 1. Create [Slack Incoming Webhook](https://my.slack.com/services/new/incoming-webhook/) (you can create target channel through this step) and copy Webhook URL.
 
