@@ -1,5 +1,5 @@
-#!/usr/bin/python
-# -*- coding: utf-8 -*-
+#!/usr/bin/env python
+# coding: utf-8
 """
 Send SMS via SMS Gateway (MFM Solutions), method ThreeDSecure (HTTP POST).
 """
