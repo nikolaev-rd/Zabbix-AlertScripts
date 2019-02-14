@@ -9,7 +9,7 @@ import os
 import sys
 import socket
 import random
-from datetime import datetime
+import uuid
 import logging
 
 ############################ PARAMETERS ############################
@@ -19,7 +19,7 @@ SMS_GATEWAY_HOST = 'sms-gateway-hostname'
 SMS_GATEWAY_PORT = 30080
 
 MESSAGE_TYPE = 'ZabbixInfo'
-MESSAGE_ID_PREFIX = 'ZABBIX-'
+MESSAGE_ID_PREFIX = 'ZABBIX'
 
 # Full URL
 SOCKET_REQUEST_URL = '/pradapter_http/http-server'
@@ -74,7 +74,7 @@ logging.basicConfig(
 def send_post_message(phone, message):
     body =  '<?xml version="1.0" encoding="utf-8"?>'
     body += '<ThreeDSecure>'
-    body +=   '<Message id="'+ MESSAGE_ID_PREFIX + datetime.today().strftime('%d.%m.%Y-%H:%M:%S.%f') + '">'
+    body +=   '<Message id="'+ MESSAGE_ID_PREFIX + '-' + str(uuid.uuid4()) + '">'
     body +=     '<' + MESSAGE_TYPE + '>'
     body +=       '<version>1.0.0</version>'
     body +=       '<msisdn>' + phone + '</msisdn>'
