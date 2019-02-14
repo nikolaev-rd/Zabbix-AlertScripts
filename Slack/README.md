@@ -2,6 +2,9 @@
 
 Send Zabbix alerts through [Incoming Webhook](https://api.slack.com/incoming-webhooks) to Slack, formatted with [message attachments](https://api.slack.com/docs/message-attachments).
 
+## Requirements
+  ✔ Zabbix >= 3.0  
+
 ## Installation & Configure
 1. Create [Slack Incoming Webhook](https://my.slack.com/services/new/incoming-webhook/) (you can create target channel through this step) and copy Webhook URL.
 
@@ -33,7 +36,9 @@ Send Zabbix alerts through [Incoming Webhook](https://api.slack.com/incoming-web
      #4. `{ALERT.SUBJECT}`  
    * **Enabled**: ☑
    
-   ![Zabbix - Create Media Type](img/Zabbix_Create_Media_Type.jpg)
+   <details><summary>Show example screenshot</summary>
+      <img src="img/Zabbix_Create_Media_Type.jpg" alt="Zabbix - Create Media Type">
+   </details>
 
 6. Assign new media type to user (Users → select user → Media → Add):
    * **Type**: Slack
@@ -65,7 +70,9 @@ Send Zabbix alerts through [Incoming Webhook](https://api.slack.com/incoming-web
      Grafana dashboard URL prepared for hostname selecting - need for link in footer. Host name (visible name or hostname) will be added to the end of this URL. [Grafana logo](https://raw.githubusercontent.com/nikolaev-rd/Zabbix-AlertScripts/master/_img/Grafana_logo_circle__32x32.png) also will be displayed in footer.  
      _Note:_ Leave this field empty if you don't want to add link to Grafana dashboard in footer.  
    
-   ![Zabbix - Create User Macros](img/Zabbix_Create_User_Macros.jpg)
+   <details><summary>Show example screenshot</summary>
+      <img src="img/Zabbix_Create_User_Macros.jpg" alt="Zabbix - Create User Macros">
+   </details>
 
 8. Create new action for Slack notifications (Configuration → Actions → Create action) or add Slack media type to existing one:
    * **Action**:  
@@ -73,7 +80,9 @@ Send Zabbix alerts through [Incoming Webhook](https://api.slack.com/incoming-web
      - **Conditions**: customize to get only events about you want to alert
      - **Enabled**: ☑
      
-     ![Zabbix - Create Action - Action tab](img/Zabbix_Create_Action__Action.jpg)  
+     <details><summary>Show example screenshot</summary>
+        <img src="img/Zabbix_Create_Action__Action.jpg" alt="Zabbix - Create Action - Action tab">
+     </details>
      
    * **Operations**:
      - **Operation type**: Send message
@@ -109,8 +118,11 @@ Send Zabbix alerts through [Incoming Webhook](https://api.slack.com/incoming-web
        SLACK_SERVICE_URL: {$SLACK_SERVICE_URL}
        GRAFANA_DASHBOARD_URL: {$GRAFANA_DASHBOARD_URL}
        NETDATA_PORT: {$NETDATA_PORT}
-       ```  
-     ![Zabbix - Create Action - Operations tab](img/Zabbix_Create_Action__Operations.jpg)  
+       ```
+     
+     <details><summary>Show example screenshot</summary>
+        <img src="img/Zabbix_Create_Action__Operations.jpg" alt="Zabbix - Create Action - Operations tab">
+     </details>
      
    * **Recovery operations**:
      - **Operation type**: Send message
@@ -146,5 +158,19 @@ Send Zabbix alerts through [Incoming Webhook](https://api.slack.com/incoming-web
        SLACK_SERVICE_URL: {$SLACK_SERVICE_URL}
        GRAFANA_DASHBOARD_URL: {$GRAFANA_DASHBOARD_URL}
        NETDATA_PORT: {$NETDATA_PORT}
-       ```  
-     ![Zabbix - Create Action - Recovery operations tab](img/Zabbix_Create_Action__Recovery_operations.jpg)  
+       ```
+     
+     <details><summary>Show example screenshot</summary>
+        <img src="img/Zabbix_Create_Action__Recovery_operations.jpg" alt="Zabbix - Create Action - Recovery operations tab">
+     </details>
+
+## TODO
+- [ ] Add example Slack messages screenshots
+- [ ] Instructions how to test/verify integration
+- [ ] Check for changes in [Zabbix 4.0: Problem name generation](https://www.zabbix.com/documentation/4.0/manual/installation/upgrade_notes_400#problem_name_generation) (`{TRIGGER.NAME}` → `{EVENT.NAME}`)
+
+## Related Links
+- [Slack message builder](https://api.slack.com/docs/messages/builder)
+- [Zabbix Alert Script for Slack by @tomohiro](https://github.com/tomohiro/zabbix-alertscript-slack/)
+- [zabbix-alert-slack by @uyorum](https://github.com/uyorum/zabbix-alert-slack)
+- [Zabbix Slack AlertScript by @ericoc](https://github.com/ericoc/zabbix-slack-alertscript)
