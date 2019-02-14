@@ -11,3 +11,8 @@ Send SMS via SMS Gateway (MFM Solutions), method ThreeDSecure (HTTP POST).
 You need to specify:  
   - `SMS_GATEWAY_HOST`
   - `SMS_GATEWAY_PORT` (default: `30080`)
+
+### TODO
+- [ ] Maybe use `{ALERT.SUBJECT}`
+  * somewhere in message
+  * to override `MESSAGE_TYPE` variable
